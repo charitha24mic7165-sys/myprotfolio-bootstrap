@@ -1,0 +1,93 @@
+/* Custom Global Adjustments */
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 70px; /* Aligns page targets accurately below the fixed navigation bar */
+}
+
+/* Typography Custom Styling Weights */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #4a5568;
+    background-color: #f7fafc;
+}
+
+.fw-extrabold {
+    font-weight: 800;
+}
+
+/* Sections Global Structure Spacers */
+.section-padding {
+    padding: 100px 0;
+}
+
+.section-title {
+    position: relative;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.title-underline {
+    width: 60px;
+    height: 4px;
+    border-radius: 2px;
+    margin-top: 12px;
+}
+
+/* Home Section Layout Fixes */
+.profile-img-container img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    animation: floatingEffect 4s ease-in-out infinite;
+}
+
+@keyframes floatingEffect {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-15px); }
+    100% { transform: translateY(0px); }
+}
+
+/* Education Icon Box Decorators */
+.icon-box {
+    width: 60px;
+    height: 60px;
+}
+
+/* Technical Skills Section Adjustments */
+.progress-height {
+    height: 10px;
+    border-radius: 5px;
+    background-color: #e2e8f0;
+}
+
+/* Interactive Card Transitions & Hover Effects */
+.transition-card, .project-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.transition-card:hover, .project-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 1rem 3rem rgba(0,0,0,.125) !important;
+}
+
+/* Project Card Structural Styling Controls */
+.project-img {
+    height: 220px;
+    object-fit: cover;
+}
+
+/* Text Utility Helpers */
+.justify-text {
+    text-align: justify;
+}
+
+/* Responsive Structural Breakdown Adjustments via Media Queries */
+@media (max-width: 991.98px) {
+    .section-padding {
+        padding: 70px 0;
+    }
+    
+    .profile-img-container img {
+        max-width: 280px;
+    }
+}
