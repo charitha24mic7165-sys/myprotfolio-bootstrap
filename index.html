@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <!-- Bootstrap 5 CSS CDN -->
+    <link href="https://jsdelivr.net" rel="stylesheet">
+    <!-- Bootstrap Icons CDN -->
+    <link href="https://jsdelivr.net" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body data-bs-spy="scroll" data-bs-target="#navbarNav" data-bs-offset="70">
+
+    <!-- 1. NAVIGATION BAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-uppercase tracking-wider" href="#home">MyPortfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto fw-medium">
+                    <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 2. HOME SECTION -->
+    <section id="home" class="d-flex align-items-center bg-light min-vh-100 section-padding">
+        <div class="container">
+            <div class="row align-items-center flex-column-reverse flex-lg-row">
+                <div class="col-lg-7 text-center text-lg-start mt-4 mt-lg-0">
+                    <h5 class="text-primary fw-bold text-uppercase">Welcome to my space</h5>
+                    <h1 class="display-4 fw-extrabold my-2 text-dark">Hi, I'm <span class="text-primary">Alex Morgan</span></h1>
+                    <h3 class="h4 text-muted mb-4">Full-Stack Web Developer & Designer</h3>
+                    <p class="lead text-secondary mb-4">I build clean, scalable, and responsive web applications combining elegant backend architecture with highly interactive frontend experiences.</p>
+                    <a href="#projects" class="btn btn-primary btn-lg me-3 px-4 py-2">View Work</a>
+                    <a href="#contact" class="btn btn-outline-dark btn-lg px-4 py-2">Contact Me</a>
+                </div>
+                <div class="col-lg-5 text-center">
+                    <div class="profile-img-container mx-auto">
+                        <!-- Replace with your actual picture URL -->
+                        <img src="https://placeholder.com" alt="Alex Morgan Profile Picture" class="img-fluid rounded-circle border border-5 border-white shadow-lg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. ABOUT ME SECTION -->
+    <section id="about" class="section-padding bg-white">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold text-dark section-title">About Me</h2>
+                <div class="title-underline mx-auto bg-primary"></div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-10 col-lg-8">
+                    <h4 class="mb-3 text-dark fw-semibold">Career Objective</h4>
+                    <p class="text-secondary mb-4 justify-text">
+                        A highly motivated and detail-oriented computer science graduate aspiring to secure a challenging position as a Full-Stack Developer. Aiming to leverage a solid foundational knowledge of web ecosystems, software architectures, and automated testing frameworks to deliver impactful engineering solutions while continuously growing in an agile engineering team.
+                    </p>
+                    <div class="row g-3">
+                        <div class="col-sm-6">
+                            <ul class="list-unstyled mb-0">
+                                <li class="mb-2"><strong class="text-dark">Name:</strong> Alex Morgan</li>
+                                <li class="mb-2"><strong class="text-dark">Email:</strong> alex.morgan@example.com</li>
+                                <li class="mb-2"><strong class="text-dark">Phone:</strong> +1 (555) 019-2834</li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-6">
+                            <ul class="list-unstyled mb-0">
+                                <li class="mb-2"><strong class="text-dark">Location:</strong> San Francisco, CA</li>
+                                <li class="mb-2"><strong class="text-dark">Availability:</strong> Full-Time / Remote</li>
+                                <li class="mb-2"><strong class="text-dark">Languages:</strong> English, Spanish</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. EDUCATION SECTION -->
+    <section id="education" class="section-padding bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold text-dark section-title">Education</h2>
+                <div class="title-underline mx-auto bg-primary"></div>
+            </div>
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 border-0 shadow-sm transition-card">
+                        <div class="card-body p-4 d-flex flex-column">
+                            <div class="icon-box bg-primary-subtle text-primary rounded mb-3 d-flex align-items-center justify-content-center">
+                                <i class="bi bi-mortarboard-fill fs-3"></i>
+                            </div>
+                            <span class="text-muted fw-bold small text-uppercase">2022 - 2026</span>
+                            <h5 class="card-title fw-bold my-2 text-dark">B.S. in Computer Science</h5>
+                            <p class="card-text text-muted mb-0">State University of California</p>
+                            <div class="mt-auto pt-3 border-top border-light-subtle">
+                                <small class="text-primary fw-medium"><i class="bi bi-star-fill me-1"></i> GPA: 3.85 / 4.00</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 border-0 shadow-sm transition-card">
+                        <div class="card-body p-4 d-flex flex-column">
+                            <div class="icon-box bg-success-subtle text-success rounded mb-3 d-flex align-items-center justify-content-center">
+                                <i class="bi bi-journal-code fs-3"></i>
+                            </div>
+                            <span class="text-muted fw-bold small text-uppercase">2020 - 2022</span>
+                            <h5 class="card-title fw-bold my-2 text-dark">Advanced Web Diploma</h5>
+                            <p class="card-text text-muted mb-0">Tech Institute of Innovation</p>
+                            <div class="mt-auto pt-3 border-top border-light-subtle">
+                                <small class="text-success fw-medium"><i class="bi bi-check-circle-fill me-1"></i> Specialization: React & Node</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 border-0 shadow-sm transition-card">
+                        <div class="card-body p-4 d-flex flex-column">
+                            <div class="icon-box bg-warning-subtle text-warning rounded mb-3 d-flex align-items-center justify-content-center">
+                                <i class="bi bi-building fs-3"></i>
+                            </div>
+                            <span class="text-muted fw-bold small text-uppercase">2016 - 2020</span>
+                            <h5 class="card-title fw-bold my-2 text-dark">High School Diploma</h5>
+                            <p class="card-text text-muted mb-0">Oakridge High School</p>
+                            <div class="mt-auto pt-3 border-top border-light-subtle">
+                                <small class="text-warning fw-medium"><i class="bi bi-award-fill me-1"></i> Valedictorian Mention</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. SKILLS SECTION -->
+    <section id="skills" class="section-padding bg-white">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold text-dark section-title">Technical Skills</h2>
+                <div class="title-underline mx-auto bg-primary"></div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="row g-4">
+                        <!-- Skill 1 -->
+                        <div class="col-md-6">
+                            <div class="d-flex justify-content-between mb-2">
